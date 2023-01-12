@@ -1,0 +1,28 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    <body>
+        <div id="container">
+            <h1>Generate a <br><span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <section >
+                <label type = "range" for= "letters" class="scale">Select between 5 to 15 character password</label>
+                <input type="range" id="strength" name="letters" min="4" max="15" oninput="this.nextElementSibling.value = this.value">
+                <output class="scale"></output>
+            </section>
+            <button id="generate-btn" onclick="generate()">Generate passwords</button>
+            <button id="option-one" class="options"></button>
+            <button id="option-two" class="options"></button>
+        </div>
+        <script src="index.js"></script>
+        
+    </body>
+</html>
